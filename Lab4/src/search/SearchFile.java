@@ -31,14 +31,7 @@ public class SearchFile {
 	public static void main(String args[]) throws FileNotFoundException {
 		
 		SearchFile search  = new SearchFile();
-		
-		 Scanner in = new Scanner(System.in);
-		 System.out.println("Write the pattern you want to find ");
-	     String pattern = in.nextLine();
-	     System.out.println("Write the name of the file you want to find the pattern in ");
-	     String fileName = in.nextLine();
-	     in.close();
-	     search.printLines(pattern, fileName); 
+	    search.printLines(args[0],args[1]); 
 		
 	}
 
